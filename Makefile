@@ -20,3 +20,6 @@ postgres-shell:
 
 py-shell:
 	docker-compose run web python manage.py shell
+
+test:
+	docker-compose run web python manage.py test -v 2
